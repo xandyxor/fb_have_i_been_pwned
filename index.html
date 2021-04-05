@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>FB have i been pwned</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://upload.cc/i1/2021/04/04/e0JBk8.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+  </style>
+  <style>
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+  </style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <!-- <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div> -->
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">have i been pwned?</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">FaceBook</p>
+    <div class="input-group mb-3">
+      <input type="text" style="background-color:transparent;color:#ffffff" class="form-control" id="uid" placeholder="886900000000" aria-label="UID" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" id="button" style="color:#ffffffbb" type="button" data-toggle="modal" data-target="#exampleModal">Search</button>
+      </div>
+    </div>
+    
+    <p class="w3-center"  style="color:#ffffffbb">
+        請輸入手機號碼09改成8869!!</br>如 09123456789 改成 8869123456789</br>
+        請勿輸入個人密碼或其他資料!!本網站僅提供查詢手機是否在外洩名單中，</br>
+        本資料庫只擁有外洩之手機號碼列表，查詢功能也僅限搜尋輸入內容是否在資料庫內</br>
+    </p>
+  </div>
+
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.facebook.com/xandyxor/" target="_blank">Andyyy</a>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="ans w3-center">
+            搜尋中...
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+</body>
+
+<script>
+    log_data = $.ajax({
+        type: "GET",
+        url: 'https://www.cloudflare.com/cdn-cgi/trace',
+        async: false,
+        success: function(request) {
+            return request;
+        },
+    });
+    
+    
+    $(document).ready(function(){
+        $("button").click(function(){
+
+            var pattern = new RegExp("[A-Za-z]+");
+            
+          
+            var str = $(" input[ id='uid' ] ").val()
+            if (str.substr(0,2)=="09"){
+              str = "886"+str.substr(2);
+            }else if (str.substr(0,2)=="+8"){
+              str = '8'+str.substr(2);
+            }
+            // console.log(str);
+            if(pattern.test(str) && str.substr(0,3)=="886"){
+                $(".ans").html('錯誤!請輸入手機號碼');
+            }else{
+                $(".ans").html('搜尋中...</br>因google app script效能問題最久可能等個10秒</br>  <div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div>');
+                $.post("https://script.google.com/macros/s/AKfycbws-FCADSTxM3zni54zD639BRviEUW53XKQ9QlC5UDMp_ieKMY8M72xicIacKJxoHm9/exec",
+                {
+                    uid:$(" input[ id='uid' ] ").val(),
+                    log:log_data.responseText,
+                },
+                function(e){
+                    console.log(e);
+                    if (e =="yes"){
+                        $(".ans").text("小心喔!您的手機號碼 有在fb外洩資料中");
+                    }else if (e =="no"){
+                        $(".ans").text("恭喜喔!您的手機號碼 沒有在fb外洩資料中");
+                    }
+                });
+            }
+
+        });
+    });
+
+
+
+
+
+</script>
+</html>
